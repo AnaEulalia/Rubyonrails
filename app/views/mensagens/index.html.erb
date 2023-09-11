@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mensagens</h1>
+
+<div id="mensagens">
+  <% @mensagens.each do |mensagem| %>
+    <%= render mensagem %>
+    <p>
+      <%= link_to "Show this mensagem", mensagem %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mensagem", new_mensagem_path %>
